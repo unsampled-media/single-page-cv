@@ -1,10 +1,144 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8" />
-    <title>Single Page CV</title>
-</head>
-<body>
-    <p>test</p>
-</body>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <!-- SEO Meta Tags -->
+        <meta name="author" content="unsampled-media"/>
+        <meta name="description"
+            content="This single page CV is an exercise in semantic HTML, originally created for Roadmap.SH Frontend roadmap.
+            It describes the relevant sections of a CV, as well as the person's contact details. 
+            You can use it as a template for your own CV."
+        />
+        <!--<link rel="canonical" href="https://www.example.com" /> When online -->
+        <!-- <meta property="og:url" content="https://www.example.com/"/> When online -->
+        <!-- Open Graph Meta Tags -->
+        <meta property="og:title" content="Single Page CV"/>
+        <meta property="og:image" content="https://avatars.githubusercontent.com/u/211674897?v=4"/>
+        <meta property="og:description"
+            content="This single page CV is an exercise in semantic HTML, originally created for Roadmap.SH Frontend roadmap.
+            It describes the relevant sections of a CV, as well as the person's contact details. 
+            You can use it as a template for your own CV."
+        />
+        <!-- Basic favicon -->
+        <link rel="icon" href="https://avatars.githubusercontent.com/u/211674897?v=4" type="image/x-icon" />
+
+        <title>Single Page CV</title>
+        <style>
+            body {
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+                    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+                    sans-serif;
+            }
+
+            .content {
+                border: 3px solid black;
+                padding: 3rem;
+                margin: 3rem;
+            }
+
+            section {
+                margin-block: 2rem;
+                text-wrap: wrap;
+                max-width: 60vw;
+            }
+
+            hr {
+                border-top: 2px solid black;
+                margin-right: 20vw;
+            }
+
+            h1 {
+                font-weight: 800;
+            }
+
+            h2 {
+                font-weight: 600;
+                color: rgb(6, 134, 6);
+                font-size: 18px;
+                margin-block: 4px;
+            }
+
+            h3 {
+                color: rgb(30, 130, 163);
+                font-size: 16px;
+                margin-block-start: 0;
+                margin-block-end: 4px;
+            }
+
+            ol,
+            ul {
+                list-style: square;
+            }
+
+            p {
+                margin-block-start: 0;
+                margin-block-end: 8px;
+            }
+
+            time {
+                font-weight: 500;
+                color: rgb(53, 52, 52);
+                margin-block: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <main class="content">
+            <hr>
+            <h1>Your Name</h1>
+            <section>
+                <h2>Junior Frontend Developer</h2>
+                <address>
+                    123 Your Street <br>
+                    Your City, ST 12345 <br>
+                    (123) 456-7890 <br>
+                    no_reply@example.com
+                </address>
+            </section>
+            <section>
+                <h2>Skills</h2>
+                <p>
+                    HTML, CSS, JavaScript, Accessibility, Figma to Design, Responsive Web
+                    Design, Technical Writing, Presentation
+                </p>
+            </section>
+            <section>
+                <h2>Education</h2>
+                <hgroup>
+                    <h3>School Name, Location - Degree</h3>
+                    <p><time datetime="2025-07">July 2025</time> to <time datetime="2027-07">July 2025</time></p>
+                </hgroup>
+                <p>List of exciting things you did at University.</p>
+            </section>
+            <section>
+                <h2>Experience</h2>
+                <hgroup>
+                    <h3 id="company-1">Company Name, Location - Job title</h2>
+                    <p><time datetime="2025-07">Month 20xx </time>to <time datetime="2025-07">Month 20xx</time></p>
+                </hgroup>
+                <ul aria-labelledby="company-1">
+                    <li>List of achievements</li>
+                    <li>List of achievements</li>
+                    <li>List of achievements</li>
+                </ul>
+                <p>Skills: list of skills used or gained at this company</p>
+            
+                <hgroup>
+                    <h3 id="company-2">Company Name, Location - Job title</h2>
+                    <p><time datetime="2025-07">Month 20xx</time> to <time datetime="2025-07">Month 20xx</time></p>
+                </hgroup>
+                <ul aria-labelledby="company-2">
+                    <li>List of achievements</li>
+                    <li>List of achievements</li>
+                    <li>List of achievements</li>
+                </ul>
+                <p>Skills: list of skills used or gained at this company</p>
+            </section>
+            <section>
+                <h2>Across the Internet</h2>
+                <p>Add your LinkedIn, GitHub profile links</p>
+            </section>
+        </main>
+  </body>
 </html>
